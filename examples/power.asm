@@ -1,0 +1,11 @@
+.CODE
+    MOV AX, 1
+    MOV BX, 2
+    MOV CX, 5
+
+POWER_LOOP:
+    MUL BX
+    DEC CX
+    JNZ POWER_LOOP
+
+    HLT
